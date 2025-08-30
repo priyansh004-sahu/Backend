@@ -22,6 +22,7 @@ chain.invoke({topic: "express"}).then(response => {         /*  */
 })
 
 
+
   // Using invoke with variables template
 // promptTemplate.pipe(model).invoke({topic: "express"}).then(response => {
 //     console.log(response.content);
