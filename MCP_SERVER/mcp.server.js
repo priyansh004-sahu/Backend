@@ -8,15 +8,11 @@ const server = new McpServer({
   version: "1.0.0"
 });
 
-
 // Add an addition tool ==> used by mcp server  
-server.registerTool("add", {
+server.registerTool("add two number", {
     title: "Addition Tool",
-    description: "Add two numbers",
-    inputSchema: z.object({
-        a: z.number().describe("the first number"),
-        b: z.number().describe("The second number")
-    })
+    description: "Add two numbers together",
+    inputSchema: {a: z.number(),b: z.number()}
 },
   async ({ a, b }) => {
     return {
