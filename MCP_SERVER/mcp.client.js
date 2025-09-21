@@ -66,7 +66,7 @@ client.listTools().then(async response => {        // change the tool format of 
     },
   });
 
-  console.log("🤖 Gemini response:", aiResponse.functionCalls);
+  console.log("🤖 Gemini aiResponse", aiResponse.functionCalls);
 
   aiResponse.functionCalls.forEach(async call => {
     const toolResponse = await client.callTool({
